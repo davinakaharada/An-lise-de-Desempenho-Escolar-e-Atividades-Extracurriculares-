@@ -35,7 +35,7 @@ Inteligência Artificial (IA) e EaD: O estudo abre caminho para pensar como a IA
 Para replicar a análise, os gráficos e os resultados apresentados no estudo, você deve executar o notebook timss.ipynb no Google Colaboratory.
 
 1. Pré-requisitos
-O notebook timss.ipynb exige a presença de três arquivos CSV, que devem ser carregados no ambiente de execução do Colab (ou estar na mesma pasta, caso esteja rodando localmente):
+O notebook timss.ipynb exige a presença de três arquivos CSV, que devem ser carregados no ambiente de execução do Colab
 
 student-context-grade-4.csv
 
