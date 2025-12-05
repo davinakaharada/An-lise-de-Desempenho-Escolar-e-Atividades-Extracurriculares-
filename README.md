@@ -1,37 +1,53 @@
-🔑 Principais Descobertas
-1. A análise identificou que certas atividades cognitivas e condições sociais estão correlacionadas com um desempenho de nível alto ou médio.
+## 📚 Análise de Desempenho Escolar e Atividades Extracurriculares (TIMSS 2023)
 
-<img width="861" height="793" alt="image" src="https://github.com/user-attachments/assets/2d538c6b-beb6-4f73-b4cb-cfda7243f851" />
+Este projeto realiza uma **análise exploratória** do desempenho em matemática de alunos do 4º ano, usando dados da avaliação internacional **TIMSS 2023**. O foco é entender a relação entre **atividades fora da escola** e o desempenho na prova.
 
-2. Correlação entre Hábitos e Notas: Foi identificada uma pequena correlação onde alunos com os hábitos de contar coisas ou ler livros tendem a ter uma média maior nas avaliações de matemática.
+A análise incluiu o cálculo da média ponderada das notas e a separação de grupos de Outliers (Baixa e Alta Performance) para comparação de contexto.
 
-<img width="729" height="566" alt="image" src="https://github.com/user-attachments/assets/40cb4206-588f-4d73-9f1e-41b89adae56e" />
+***
 
-3. Influência dos Pais: Pais de alunos de alta performance leem livros com frequência ou às vezes para seus filhos. Em contraste, 20% dos pais de alunos de baixa performance nunca leem.
+### 🔑 Principais Descobertas e Gráficos
 
-<img width="992" height="596" alt="image" src="https://github.com/user-attachments/assets/0aa55310-def0-42d0-8012-2845391c4c1b" />
+A análise identificou que **hábitos no lar e condições de estudo** estão correlacionados com o desempenho.
 
-4. Condições de Estudo: Fatores como possuir uma mesa de estudo e a frequência com que o aluno busca informações fora da escola ou com que o professor varia as aulas também se correlacionam positivamente com o alto desempenho.
-   
-<img width="841" height="559" alt="image" src="https://github.com/user-attachments/assets/9c634dfd-84f6-436a-80d0-663c812e4390" />
+#### 1. Distribuição de Desempenho
+A maior parte dos alunos possui média entre 400 e 550 pontos. Os Outliers de Alta Performance ficaram acima de 783 pontos e os de Baixa Performance ficaram abaixo dos 208 pontos.
 
-Impacto Limitado da Tecnologia: A posse de um computador próprio não demonstrou ter grande influência no desempenho dos alunos.
+<img width="697" height="510" alt="image" src="https://github.com/user-attachments/assets/c9b864a4-6976-4e1d-becb-d5121a574676" />
 
-🛠️ Como Rodar a Análise no Google Colab
-Para replicar a análise, os gráficos e os resultados apresentados no estudo, você deve executar o notebook timss.ipynb no Google Colaboratory.
+#### 2. Relação com Hábitos no Lar
+<img width="866" height="798" alt="image" src="https://github.com/user-attachments/assets/5bee82bf-fc3a-4a4b-98b4-cacb3513d1a8" />
 
-1. Pré-requisitos
-O notebook timss.ipynb exige três arquivos CSV, que devem ser carregados no ambiente de execução do Colab
+Foi identificada uma **pequena correlação negativa** onde alunos com o hábito de contar coisas ou ler livros tendem a ter uma média maior nas avaliações.
 
-student-context-grade-4.csv
+* **Leitura de Livros:** A média é $\approx \text{502.9}$ para quem lê **Frequentemente** e $\approx \text{468.8}$ para quem lê **Nunca/Quase Nunca**.
+* **Contar Coisas:** A média é $\approx \text{497.8}$ para quem conta **Frequentemente** e $\approx \text{468.6}$ para quem conta **Nunca/Quase Nunca**.
 
-student-achievement-grade-4.csv
+#### 3. Contexto dos Outliers (Leitura e Estrutura)
 
-home-context-grade-4.csv
+As diferenças contextuais entre os grupos de desempenho extremo reforçam a importância do apoio familiar e do ambiente:
 
-2. Executando o Notebook
-Acessar e Abrir: Carregue o arquivo timss.ipynb no Google Colab.
+* **Leitura pelos Pais:** Pais de alunos de Alta Performance leem com mais frequência (38.7% frequentemente, 61.3% às vezes). Já **20%** dos pais de alunos de Baixa Performance **nunca ou quase nunca** leem.
+  <img width="991" height="591" alt="image" src="https://github.com/user-attachments/assets/d62978b5-fcc7-474d-9838-bf48f5dcbb28" />
 
-Carregar Dados: Execute a célula inicial que contém o código para carregar os arquivos CSV (certifique-se de que os nomes dos arquivos no Colab coincidem exatamente com os nomes no código).
+* **Mesa de Estudo:** A média para a posse de mesa de estudo é significativamente melhor no grupo de Alta Performance (1.15) do que no grupo de Baixa Performance (1.29).
+* **Posse de PC:** A posse de um computador próprio **não tem grande influência** no desempenho dos alunos (cerca de 67% em ambos os grupos).
+  <img width="955" height="624" alt="image" src="https://github.com/user-attachments/assets/a0ed9e2e-8baf-497e-9006-97b4ca9b51d0" />
 
-Processar: Execute todas as células do notebook em ordem. O código está estruturado para fazer a limpeza, os joins (combinação) dos dados e gerar as visualizações.
+***
+
+### 💡 Conclusão
+
+O estudo pode servir de base para o desenvolvimento de soluções de **Educação Personalizada** usando **Inteligência Artificial (IA)**, visando apoiar estudantes com dificuldades e oferecer enriquecimento para os de alta performance.
+
+***
+
+### 🛠️ Como Rodar o Projeto
+
+1.  **Baixe** os seguintes arquivos de dados na [fonte](https://basedosdados.org/dataset/cc4909ba-67ea-460a-9666-1e199f02afc7?table=9cb42f24-cb1d-46d6-bbc8-15744d6290ad):
+    * `home-context-grade-4.csv`
+    * `student-achievement-grade-4.csv`
+    * `student-context-grade-4.csv`
+2.  Garanta que os arquivos de dados estejam no **mesmo diretório** do notebook (`timss.ipynb`).
+3.  Abra o notebook (`timss.ipynb`) no **Google Colab** ou em seu ambiente Jupyter local.
+4.  **Execute** as células em sequência.
