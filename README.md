@@ -1,41 +1,27 @@
-📚 Análise de Desempenho Escolar e Contexto Social (TIMSS 2023)
+🔑 Principais Descobertas
+1. A análise identificou que certas atividades cognitivas e condições sociais estão correlacionadas com um desempenho de nível alto ou médio.
 
-Este projeto tem como foco a análise da correlação entre o desempenho em matemática de alunos do 4º ano e certas atividades e condições sociais/familiares identificadas na base de dados pública do TIMSS (Trends in International Mathematics and Science Study) de 2023.
+<img width="861" height="793" alt="image" src="https://github.com/user-attachments/assets/2d538c6b-beb6-4f73-b4cb-cfda7243f851" />
 
-🧐 Explicação e Objetivos
-O estudo vai além dos fatores puramente pedagógicos, buscando entender como o ambiente fora da escola pode influenciar o aprendizado e os resultados acadêmicos dos alunos.
+2. Correlação entre Hábitos e Notas: Foi identificada uma pequena correlação onde alunos com os hábitos de contar coisas ou ler livros tendem a ter uma média maior nas avaliações de matemática.
 
-💡 Principais Focos de Análise:
-Hábitos Cognitivos e Desempenho:
+<img width="729" height="566" alt="image" src="https://github.com/user-attachments/assets/40cb4206-588f-4d73-9f1e-41b89adae56e" />
 
-Foi investigada a relação entre a frequência com que os alunos leem livros ou contam coisas fora da escola e suas respectivas médias nas avaliações de matemática.
+3. Influência dos Pais: Pais de alunos de alta performance leem livros com frequência ou às vezes para seus filhos. Em contraste, 20% dos pais de alunos de baixa performance nunca leem.
 
-O resultado principal é que há uma correlação positiva entre a maior frequência dessas atividades e uma média mais alta. Isso sugere que a estimulação cognitiva precoce e contínua em casa pode ser um fator crucial.
+<img width="992" height="596" alt="image" src="https://github.com/user-attachments/assets/0aa55310-def0-42d0-8012-2845391c4c1b" />
 
-Influência Parental (Leitura):
+4. Condições de Estudo: Fatores como possuir uma mesa de estudo e a frequência com que o aluno busca informações fora da escola ou com que o professor varia as aulas também se correlacionam positivamente com o alto desempenho.
+   
+<img width="841" height="559" alt="image" src="https://github.com/user-attachments/assets/9c634dfd-84f6-436a-80d0-663c812e4390" />
 
-Uma comparação entre alunos de baixa e alta performance mostrou que os pais de alunos de alta performance leem livros com mais frequência para seus filhos.
-
-No grupo de baixa performance, uma parcela significativa de pais nunca realiza essa atividade, destacando o papel essencial do envolvimento familiar na alfabetização e no desenvolvimento.
-
-Tecnologia (Posse de Computador):
-
-Foi analisado se a posse de um computador próprio pelo aluno demonstrava uma influência significativa no desempenho.
-
-Curiosamente, a posse do equipamento não apresentou uma correlação forte com a alta performance, sugerindo que o mero acesso ao hardware pode não ser o fator mais decisivo, mas sim como a tecnologia é utilizada.
-
-🚀 Conclusão e Futuro:
-A análise dos dados do TIMSS reafirma a importância dos fatores sociais e familiares no sucesso acadêmico. O trabalho serve como uma base de reflexão e pesquisa para:
-
-Educação Personalizada: Como podemos usar a análise de dados para identificar alunos em risco e criar intervenções direcionadas.
-
-Inteligência Artificial (IA) e EaD: O estudo abre caminho para pensar como a IA e o Ensino a Distância (EaD) podem ser ferramentas fundamentais para estender a experiência educacional para o ambiente doméstico, criando experiências de aprendizado personalizadas que complementam o que acontece em sala de aula, especialmente para mitigar a ausência de estímulos familiares.
+Impacto Limitado da Tecnologia: A posse de um computador próprio não demonstrou ter grande influência no desempenho dos alunos.
 
 🛠️ Como Rodar a Análise no Google Colab
 Para replicar a análise, os gráficos e os resultados apresentados no estudo, você deve executar o notebook timss.ipynb no Google Colaboratory.
 
 1. Pré-requisitos
-O notebook timss.ipynb exige a presença de três arquivos CSV, que devem ser carregados no ambiente de execução do Colab
+O notebook timss.ipynb exige três arquivos CSV, que devem ser carregados no ambiente de execução do Colab
 
 student-context-grade-4.csv
 
